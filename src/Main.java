@@ -13,5 +13,11 @@ public class Main {
         if(myVariable == 0){
             System.out.println("It's now zero");
         }
+        Game g1 = new Game(true,800,5, 100);
+        Game g2 = new Game(true,10000,8, 200);
+        System.out.println("Your final score was "+ g1.calculateFinalScore());
+        System.out.println("Your final score was "+ g2.calculateFinalScore());
+        g1.calculateHighScorePosition(2500);
+        g1.displayHighScorePosition("Tim2");
     }
 }
