@@ -4,6 +4,7 @@ import static Looping.Account.calculateInterestRate;
 import static Looping.PalindromeNumberCheck.isPalindromeNumber;
 import static Looping.PrimeNumber.isPrimecheck;
 import static Looping.PrimeNumber.primeNumbercount;
+import static Looping.SharedDigits.hasSharedDigit;
 import static Looping.Sum3And5Challenge.sum3And5;
 import static Looping.SumDigitChallenge.sumOfdigits;
 import static Looping.WhileLoopChanllenge.printEvenNumber;
@@ -39,6 +40,8 @@ public class Main {
         System.out.println("Sum of all digits in 15 : "+ sumOfdigits(5));
 
         System.out.println("121 is "+(isPalindromeNumber(121)? "" :"Not a ")+"Palindrome number.");
+
+        System.out.println(" hasSharedDigit(9, 9) : "+hasSharedDigit(125, 44));
 
     }
 }
