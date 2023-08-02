@@ -1,6 +1,10 @@
 package Looping;
 
 import static Looping.Account.calculateInterestRate;
+import static Looping.FactorPrinter.printFactors;
+import static Looping.GreatesCommondivisor.getGreatestCommonDivisor;
+import static Looping.LastDigitChecker.hasSameLastDigit;
+import static Looping.NumberToWords.numberToString;
 import static Looping.PalindromeNumberCheck.isPalindromeNumber;
 import static Looping.PrimeNumber.isPrimecheck;
 import static Looping.PrimeNumber.primeNumbercount;
@@ -42,6 +46,16 @@ public class Main {
         System.out.println("121 is "+(isPalindromeNumber(121)? "" :"Not a ")+"Palindrome number.");
 
         System.out.println(" hasSharedDigit(9, 9) : "+hasSharedDigit(125, 44));
+
+        System.out.println("hasSameLastDigit : "+  hasSameLastDigit(1,1,2));
+
+//        System.out.println("Factor of 16 : "+ printFactors(16));
+        printFactors(6);
+
+
+        System.out.println("getGreatestCommonDivisor : "+ getGreatestCommonDivisor(23,22));
+
+        numberToString(30020);
 
     }
 }
