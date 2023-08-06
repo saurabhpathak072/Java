@@ -40,10 +40,15 @@ public class UserInputMain {
 
     }
     public static void main(String[] args) {
+
         try{
+            NumberOperations numOp = new NumberOperations();
 //            System.out.println("User Input from System.Console() : "+ getAgeUsingConsole());
 //          System.out.println("We can "+(canPack(2,3,12)? "":"Not ")+"Pack 2 Big and 3 Small upto 12");
           calculatePack(2,10,1);
+
+            System.out.println( "Please Enter Number to get Largest Prime Number : ");
+            System.out.println(numOp.getLargestPrimeNumber());
         }
         catch (NullPointerException e){
             getAgeUsingScanner();
