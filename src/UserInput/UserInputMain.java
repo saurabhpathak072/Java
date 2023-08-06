@@ -3,8 +3,6 @@ package UserInput;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static UserInput.FlourPackChallenge.calculatePack;
-
 public class UserInputMain {
     public static String getAgeUsingConsole(){
         String name = System.console().readLine("Hey! Whats your name.");
@@ -41,19 +39,23 @@ public class UserInputMain {
     }
     public static void main(String[] args) {
 
-        try{
-            NumberOperations numOp = new NumberOperations();
-//            System.out.println("User Input from System.Console() : "+ getAgeUsingConsole());
-//          System.out.println("We can "+(canPack(2,3,12)? "":"Not ")+"Pack 2 Big and 3 Small upto 12");
-          calculatePack(2,10,1);
+//        try{
+//            NumberOperations numOp = new NumberOperations();
+////            System.out.println("User Input from System.Console() : "+ getAgeUsingConsole());
+////          System.out.println("We can "+(canPack(2,3,12)? "":"Not ")+"Pack 2 Big and 3 Small upto 12");
+//          calculatePack(2,10,1);
+//
+//            System.out.println( "Please Enter Number to get Largest Prime Number : ");
+//            System.out.println(numOp.getLargestPrimeNumber());
+//        }
+//        catch (NullPointerException e){
+//            getAgeUsingScanner();
+//        }
 
-            System.out.println( "Please Enter Number to get Largest Prime Number : ");
-            System.out.println(numOp.getLargestPrimeNumber());
-        }
-        catch (NullPointerException e){
-            getAgeUsingScanner();
-        }
+//        ----------------------------------Sum Of Entered Digit-------------------
 
-
+        EnterSumOfUserInput sum = new EnterSumOfUserInput();
+         int getSum = sum.getSumOfUserInput();
+        System.out.println("Sum of Entered Digit is : "+ getSum);
     }
 }
