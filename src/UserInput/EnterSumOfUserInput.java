@@ -12,7 +12,7 @@ public class EnterSumOfUserInput {
 
         Scanner scanner = new Scanner(System.in);
         while (count<5){
-            do {
+//            do {
                 try {
                     System.out.println("Please Enter "+(count+1)+" Number ");
                     int number = scanner.nextInt();
@@ -26,7 +26,7 @@ public class EnterSumOfUserInput {
                     System.out.println("You Entered wrong Number, Pleas Enter Valid Number  ");
                     scanner.next();
                 }
-            }while (!isValid && count<5);
+//            }while (!isValid && count<5);
 
         }
         scanner.close();
