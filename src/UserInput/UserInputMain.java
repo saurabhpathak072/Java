@@ -54,8 +54,14 @@ public class UserInputMain {
 
 //        ----------------------------------Sum Of Entered Digit-------------------
 
-        EnterSumOfUserInput sum = new EnterSumOfUserInput();
-         int getSum = sum.getSumOfUserInput();
-        System.out.println("Sum of Entered Digit is : "+ getSum);
+//        EnterSumOfUserInput sum = new EnterSumOfUserInput();
+//         int getSum = sum.getSumOfUserInput();
+//        System.out.println("Sum of Entered Digit is : "+ getSum);
+
+
+//        ---------------------------Min And Max Challenge--------------------------
+        MinMaxChallenge mxmin = new MinMaxChallenge();
+        System.out.println("Please enter Number from we have to get Max and Minimum number: ");
+        mxmin.getNumber();
     }
 }
