@@ -50,7 +50,7 @@ public class Account {
     }
 
     public void getAccountDetail(){
-        System.out.println("Customer Name : "+this.getCustomerName()+"\nAccount Number : "+this.getAccountNumber()+"\nAccount Balance : "+this.getAccountBalance()+"\nContact No. : "+this.getPhoneNumber()+"\nEmail : "+this.getEmail());
+        System.out.println("Customer Name : "+this.getCustomerName()+"\nAccount Number : "+this.getAccountNumber()+"\nAccount Balance : \u20B9"+this.getAccountBalance()+"\nContact No. : "+this.getPhoneNumber()+"\nEmail : "+this.getEmail());
     }
 
     protected void depositAmount() {
@@ -60,9 +60,9 @@ public class Account {
         while (amount <= 0) {
             try {
                 amount = scanner.nextDouble();
-                System.out.println(amount + " has been credited to the account.");
+                System.out.println("\u20B9"+amount + " has been credited to the account.");
                 this.accountBalance += amount;
-                System.out.println("Your updated balance is : " + this.accountBalance);
+                System.out.println("Your updated balance is : \u20B9" + this.accountBalance);
             } catch (Exception ex) {
                 System.out.println("You Entered Invalid Amount! \nPlease enter valid amount.");
                 scanner.next();
@@ -77,9 +77,9 @@ public class Account {
         while ( amount <= 0) {
             try {
                 amount = scanner.nextDouble();
-                System.out.println(amount + " has been debited from the account.");
+                System.out.println("\u20B9"+amount + " has been debited from the account.");
                 this.accountBalance -= amount;
-                System.out.println("Your updated balance is : " + this.accountBalance);
+                System.out.println("Your updated balance is : \u20B9" + this.accountBalance);
             } catch (Exception ex) {
                 System.out.println("You Entered Invalid Amount! \nPlease enter valid amount.");
                 scanner.next();
