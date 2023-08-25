@@ -8,7 +8,7 @@ public class Account {
     private String customerName;
     private String email;
     private long phoneNumber;
-    private static Scanner scanner = new Scanner(System.in);
+
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -55,7 +55,7 @@ public class Account {
 
     protected void depositAmount() {
         double amount = 0d;
-//        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Please Enter Amount to Deposit : ");
         while (amount <= 0) {
             try {
@@ -72,11 +72,10 @@ public class Account {
 
     protected void withdrawlAmount() {
         double amount = 0d;
-//        Scanner scanner1 = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
         System.out.println("Please Enter Amount to Withdrawal : ");
         while ( amount <= 0) {
             try {
-
                 amount = scanner.nextDouble();
                 System.out.println(amount + " has been debited from the account.");
                 this.accountBalance -= amount;
