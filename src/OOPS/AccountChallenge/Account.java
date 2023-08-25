@@ -9,6 +9,20 @@ public class Account {
     private String email;
     private long phoneNumber;
 
+    public Account() {
+        this(123,23,"23er","ewrfg",7865456789l);
+        System.out.println("This is default constructor Initiated.");
+    }
+
+    public Account(int accountNumber, double accountBalance, String customerName, String email, long phoneNumber) {
+        System.out.println("This is the main constructor.");
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
