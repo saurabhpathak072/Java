@@ -30,7 +30,71 @@ public class Main {
         String formattedString = String.format("Your age is %d%n",age);
         System.out.printf(formattedString);
 
-        formattedString = "Your age is %d".formatted(age);
+        formattedString = "Your age is %d %n".formatted(age);
         System.out.printf(formattedString);
+
+//        ----------------String Inspection Methods Stats --------------------
+
+        StringMethods.printInformation("Hello World");
+        StringMethods.printInformation("");
+        StringMethods.printInformation("\t   \t\n");
+
+        String helloWorld = "Hello World";
+        System.out.printf("index of r = %d%n",helloWorld.indexOf('r'));
+        System.out.printf("index of World = %d%n",helloWorld.toLowerCase().indexOf("World".toLowerCase()));
+        System.out.println();
+
+        System.out.printf("index of l = %d%n",helloWorld.indexOf('l'));
+        System.out.printf("index of l = %d%n",helloWorld.lastIndexOf('l'));
+        System.out.println();
+
+        System.out.printf("index of l = %d%n",helloWorld.indexOf('l',3));
+        System.out.printf("index of l = %d%n",helloWorld.lastIndexOf('l',8));
+        System.out.println();
+//        ----------------String Inspection Methods Ends --------------------
+
+//        ---------------- String Comparison Methods Starts ---------------------
+        String helloWorldLower = helloWorld.toLowerCase();
+        if(helloWorldLower.equals(helloWorld)){
+            System.out.println("Value Match Exactly");
+        }
+        if(helloWorldLower.equalsIgnoreCase(helloWorld)){
+            System.out.println("Value Match Ignoring case");
+        }
+
+        if(helloWorld.startsWith("Hello")){
+            System.out.println("String starts with Hello");
+        }
+
+        if(helloWorld.endsWith("World")){
+            System.out.println("String ends with World");
+        }
+
+        if(helloWorld.contains("Hello")){
+            System.out.println("String Contains Hello");
+        }
+        if(helloWorldLower.contentEquals("hello world")){
+            System.out.println("Value Match Exactly");
+        }
+        System.out.println();
+//        ---------------- String Comparison Methods Ends ---------------------
+
+//        ------------------- String Manipulation Methods Starts --------------------
+        StringMethods strMethods = new StringMethods();
+//        substring()
+        strMethods.getStringMethods();
+        System.out.println();
+
+//        join() method
+        strMethods.getJoinMethods();
+
+//        Repeat and intend methods
+        strMethods.repeatAndIntend("ABS\n",8);
+        strMethods.repeatAndIntend("     ABS\n",-2);
+//        ------------------- String Manipulation Methods Ends ----------------------
+
+
     }
+
+
 }
