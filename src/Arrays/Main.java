@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int[] myIntArray = new int[10];     // Array is Not resizable
@@ -20,5 +22,27 @@ public class Main {
         for (int i = 0; i < newArray.length; i++) {
             System.out.print(newArray[i] + " ");
         }
+
+        System.out.println();
+
+        int[] newArrayType;
+        newArrayType = new int[5];
+        for(int i=0; i< newArrayType.length; i++){
+            newArrayType[i] = newArrayType.length - i;
+        }
+        for (int element :
+                newArrayType) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+        System.out.println(Arrays.toString(newArrayType));
+//        Object test1 = newArrayType;
+        Object[] newObjArray = new Object[3];
+        newObjArray[0] = newArrayType;
+        newObjArray[1] = new StringBuilder("Test1");
+        newObjArray[2] = 1;
+
+        System.out.println("-".repeat(30));
+        System.out.println(Arrays.toString(newObjArray));
     }
 }
