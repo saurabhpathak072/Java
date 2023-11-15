@@ -48,5 +48,23 @@ public class ArrayMethods {
         int[] largeArray = Arrays.copyOf(thirdArray,15);
         System.out.println(Arrays.toString(largeArray));
         System.out.println("-".repeat(50));
+        System.out.println();
+        System.out.println("Search in Array");
+        System.out.println("-".repeat(50));
+        String[] sTring = {"Mark","dhoni","sachin","dravid"};
+        Arrays.sort(sTring);
+        // Array should be sorted and has unique element in array
+        // if there is no unique element in array use linear search
+        int foundAt = Arrays.binarySearch(sTring,"Mark");
+        if(foundAt != -1){
+            System.out.println("Mark is Present in Array");
+        } else {
+            System.out.println("Mark is not found in Array");
+        }
+        System.out.println("-".repeat(50));
+
+        System.out.println();
+
+        
     }
 }
