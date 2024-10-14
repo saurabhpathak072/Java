@@ -1,2 +1,5 @@
-package School;public class Student {
+package School;
+
+public class Student {
+
 }
